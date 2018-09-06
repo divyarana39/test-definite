@@ -1,0 +1,376 @@
+body{
+	background-color: white;
+	margin-right: 0;
+	margin-left: 0;
+}
+@font-face {
+  font-family: MMC-OFFICE;
+  src: URL(MMCOFFICE-Regular.ttf) format('truetype');
+}
+p,h1,h2,h3,h4,h5,h6,input,button,li{
+	font-family: MMC-OFFICE;
+}
+.content-caontainer{
+	background-color: blue;
+	height: 100%;
+}
+header>div{
+	color: black;
+	position: relative;
+    height: 80px;
+    background: white;
+    line-height: 80px;
+}
+.list-menu-bar{
+	list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.burger-menu{
+	display: inline-block !important;
+    line-height: 80px !important;
+}
+.logo{
+	display: inline-block;
+    width: 65px;
+    line-height: 80px;
+    height: auto;
+}
+ul>li>a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	float: right;
+	margin: 0 30px;
+}
+li:hover{
+	cursor: pointer;
+	font-weight: 900;
+}
+.red-color{
+	color: red;
+}
+.material-icons.font-size-14px{
+	font-size: 14px !important;
+}
+.content-banner{
+	position: relative;
+	width: 100%;
+	line-height: 0;
+}
+.line-heigt-1{
+	line-height: 1 ;
+}
+
+/*content*/
+.banner{
+	width: 100%;
+}
+.position-absolute{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+}
+.banner-desc{
+	position: absolute;
+    top: 30%;
+    right: 0;
+}
+.button-play{
+	border: none;
+	background-color: red;
+	color: white;
+	padding: 5px 25px 5px 10px
+}
+.icon-play{
+	-webkit-text-fill-color: white;
+	position: absolute;
+    left: 90px;
+    bottom: 6px;
+}
+.banner-img{
+    width: 200px;
+}
+content>.content-adv{
+	width: 100%;
+	min-height: 413.31px;
+}
+.content-relative{
+	position: relative;
+}
+.content-adv-main{
+	width: 100%;
+}
+.ferris-wheel-title{
+	position: absolute;
+	color: white;
+	bottom: 0;
+}
+.card-left{
+	display: inline-block;
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+.card-right{
+	display: inline-block;
+	width: 50%;
+	height: 50%;
+	float: right;
+}
+.card-desc{
+	white-space: wrap; 
+    text-align: center;
+}
+.card-desc-h2{
+	margin: 0 auto;
+}
+.card-desc-h3{
+	margin-top: 5px;
+    margin-bottom: 0;
+}
+.card-desc-p{
+	margin-top: 0;
+    margin-bottom: 16px;
+}
+.email-adv{
+	min-height: 200px;
+    background-color: black;
+    color: white;
+    margin: 5px 45px;
+}
+.desc-newsletter{
+	white-space: pre-line;
+}
+.title-newsletter{
+	width: 50%;
+	margin-bottom: 0;
+}
+.footer-content{
+	text-align: center;
+}
+.input-style{
+	margin: 10px 20px;
+    width: 250px;
+    height: 25px;
+}
+.button-style{
+	background-color: red;
+    margin: 10px 20px;
+    width: 150px;
+    height: 25px;
+    color: white;
+    border: none;
+}
+
+/*MENU BAR*/
+.menu-bar{
+	width: 100%;
+	display: none;
+	border-top: solid 1px red;
+	position: relative;
+}
+.product-card{
+	width: 33%;
+	text-align: center;
+    display: inline-block;
+}
+.menu-bar-title{
+	margin-left: 115px;
+}
+.menu-bar::before{
+	content: "";
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    bottom: 13px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+.menu-bar::before{
+    border-bottom: 7px solid red;
+    position: absolute;
+    right: 380px;
+    top: -9px;
+}
+
+/*SIDE BAR*/
+.material-icons.close-side-bar{
+	color: red;
+	float: right;
+	font-weight: 900;
+}
+.close-side-bar:hover,.side-bar>div>h3{
+	cursor: pointer;
+}
+.side-bar{
+	display: none;
+	height: calc(100% + 100% + 100% + 100% + 76px);
+	position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    padding: 35px 50px;
+    z-index: 3;
+    /*animation:animateleft 0.4s;*/
+}
+.blanket{
+	position:fixed;
+	display:none;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:rgba(0,0,0,0.5);
+	z-index:1;
+	/*animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}*/
+}
+/*video*/
+.material-icons.close-video{
+	font-size: 60px;
+	position: absolute;
+    color: red;
+    font-weight: 900;
+    top: -55px;
+    right: -60px;
+}
+.play-video{
+	display: none;
+	cursor: pointer;
+	height: 567px;
+    position: absolute;
+    top: 115px;
+    left: 60px;
+    z-index: 2;
+    border: solid 5px white;
+}
+@media only screen and (max-width: 400px) {
+	.half-content-left.content-relative{
+		width: 100%;
+		line-height: 0;
+	}
+	.half-content-right{
+		width: 100%;
+		float: unset;
+	}
+	.card-left,.card-right{
+		width: 100%;
+	}
+    .email-desc{
+        width: 50%;
+	    position: absolute;
+	    top: 35px;
+	    left: 80px;
+    }
+    .email-form{
+    	position: absolute;
+	    top: 50px;
+	    right: 80px;
+    }
+	footer>.footer-container {
+	    width: 100%;
+	    padding-top: 20px;
+	    position: absolute;
+	    bottom: -263px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.half-content-left.content-relative{
+		width: 100%;
+		line-height: 0;
+	}
+	.half-content-right{
+		width: 100%;
+		float: unset;
+	}
+	.card-left,.card-right{
+		width: 100%;
+	}
+    .email-desc{
+        width: 50%;
+	    position: absolute;
+	    top: 35px;
+	    left: 80px;
+    }
+    .email-form{
+    	position: absolute;
+	    top: 50px;
+	    right: 80px;
+    }
+	footer>.footer-container {
+	    width: 100%;
+	    padding-top: 20px;
+	    position: absolute;
+	    bottom: -263px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 991px) {
+	footer>.footer-container {
+		width: 100%;
+	    padding-top: 20px;
+	    position: absolute;
+	    bottom: 100px;
+	}
+	.half-content-right{
+		width: 100%;
+		float: unset;
+		width: auto;
+	}
+    .email-desc{
+        width: 50%;
+	    position: absolute;
+	    top: 35px;
+	    left: 80px;
+    }
+    .card-left,.card-right{
+		width: 50%;
+	}
+    .email-form{
+    	position: absolute;
+	    top: 50px;
+	    right: 80px;
+    }
+    .copyright-container{
+    	text-align: center;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ 	.half-content-right{
+		display: inline-block;
+		width: 50%;
+		float: right;
+	} 
+	.half-content-left.content-relative{
+		width: 50%;
+		float: left;
+		display: inline-block;
+	}
+	.email-desc{
+		position: absolute;
+   	 	top: 25px;
+  	  	left: 70px;
+	}
+	.email-form{
+		position: absolute;
+    	top: 50px;
+    	right: 0;
+	}
+	footer>.footer-container{
+		width: 100%;
+		padding-top: 20px;
+		position: relative;
+		bottom: 0;
+	}
+} 

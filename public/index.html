@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> MITSUBISHI MOTORS
+	</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script src="../js/homeScript.js"></script>
+</head>
+<body >
+	<div class="blanket" onclick="closeSideBar()" id="blanket"></div>
+	<div class="play-video" id="playVideo">
+		<img src="../image/video.png">
+		<i class="material-icons close-video" id="closeVideo" onclick="playVideo()">close</i>
+	</div>
+	<div class="content-container">
+		<header>
+		<div>
+			<img class="logo" src="../image/logo1.png">
+			<ul class="list-menu-bar">
+				<li><a href="javascript:sideBarCall()"><i class="material-icons red-color burger-menu">dehaze</i></a></li>
+				<li>ABOUT</li>
+				<li>PROMO</li>
+				<li onmouseover="javascript:menuBarCall()" onmouseout="javascript:menuBarCall()"><a href="javascript:menuBarCall()"> PRODUCT <i class="material-icons font-size-14px red-color">keyboard_arrow_down</i> </a></li>
+			</ul>
+		</div>
+	</header>
+<!-- MENU BAR -->
+	<div class="menu-bar" id="menuBar">
+		<h1 class="menu-bar-title">Product</h1>
+		<div class="product-card">
+			<img src="../image/car.png">
+			<h3>ULTIMATE A/T</h3>
+		</div>
+		<div class="product-card">
+			<img src="../image/car.png">
+			<h3>SPORT A/T</h3>
+		</div>
+		<div class="product-card">
+			<img src="../image/car.png">
+			<h3>EXCEED A/T</h3>
+		</div>
+	</div>
+<!-- SIDE BAR -->
+	<div class="side-bar" id="sideBar">
+		<i class="material-icons close-side-bar" id="closeSideBar" onclick="closeSideBar()">close</i>
+		<div>
+			<h3>KARIR</h3>
+			<h3>PURNA JUAL</h3>
+			<h3>HUBUNGI KAMI</h3>
+		</div>
+	</div>
+<!-- content -->
+	<content>
+		<div class="content-banner">
+			<img class="banner" src="../image/banner.png">
+			<div class="banner-desc">
+				<img class="banner-img" src="../image/banner-img.png">
+				<p class="line-heigt-1">Temukan bagaimana Mitsubishi Xpander <br> Menjadi satu-satunya MPV yang membawa <br> berton-ton kebahagiaan untuk keluarga Indonesia</p>
+				<button class="button-play" onclick="playVideo()">PLAY VIDEO <i class="material-icons icon-play red-color font-size-14px">play_circle_filled</i></button>
+			</div>
+			<i class="fas fa-angle-double-down red-color position-absolute"></i>
+		</div>
+		<div class="content-adv">
+			<div class="half-content-left content-relative">
+				<img class="content-adv-main" src="../image/ferris-wheel.png">
+				<h2 class="ferris-wheel-title">Ferris Wheel</h2>
+			</div>
+			<div class="half-content-right">
+				<img class="card-left carousel" src="../image/carousel.png">
+				<div class="card-right card-desc">
+					<h3 class="card-desc-h3 red-color">Baloon Pool	</h3>
+					<h2 class="card-desc-h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+					<p class="card-desc-p">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat..</p>
+				</div>
+				<img class="card-right carousel" src="../image/ballon-pool.png">
+				<div class="card-left card-desc" >
+					<h3 class="card-desc-h3 red-color">CAROUSEL</h3>
+					<h2 class="card-desc-h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+					<p class="card-desc-p">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat..</p>
+				</div>
+			</div>
+		</div>
+	</content>
+	<footer>
+		<div class="footer-container">
+			<div class="email-adv">
+				<div class="email-desc half-content-left">
+					<h1 class="title-newsletter">Berlangganan Newsletter</h1>
+					<p class="desc-newsletter">Jangan lewatkan informasi produk terbaru, penawaran ekslusif, 
+					dan aktivitas menarik Mitsubishi Motors Indonesia langsung di email Anda. </p>
+				</div>
+				<div class="email-form half-content-right">
+					<form>
+						<input type="text" class="input-style" name="name" id="name" placeholder="nama"><br>
+						<input type="email" class="input-style" name="email" id="email" placeholder="email"><br>
+						<button class="memberButton button-style">Berlangganan</button>
+					</form>
+				</div>
+				
+			</div>
+			<div class="copyright-container">
+				<p class="footer-content">Copyright &copy; 2018. PT. Mitsubishi Motors Krama Yudha Sales Indonesia</p>
+			</div>
+		</div>
+	</footer>
+	</div>
+	
+</body>
+</html>
